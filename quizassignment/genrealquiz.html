@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>General Examples</title>
+
+  <script type="text/javascript">
+  function Check()
+  {
+  	var count;
+    count = 0;
+	
+    // clear results box
+    document.getElementById('results').value = "";
+	
+    // check if T is checked
+    if (document.getElementById('T').checked) {
+      count = count + 1;
+      document.getElementById('results').value = 
+        document.getElementById('results').value + 
+        "true is checked" + "\n";
+    }
+	
+    // check if Lists is selected
+    if (document.getElementById('mp3').checked || document.getElementById('audio').checked ) || document.getElementById('sound').checked ){
+		  count = count + 1;
+     document.getElementById('results').value = 
+        document.getElementById('results').value + 
+        "mp3 is checked" + "\n";
+	}
+	
+  
+	  // check if rel is checked
+    if (document.getElementById('rel').checked) {
+      count = count + 1;
+      document.getElementById('results').value = 
+        document.getElementById('results').value + 
+        "rel is checked" + "\n";
+    }
+	  
+	   // check if false is selected
+    if (document.getElementById('False').checked ) {
+		  count = count + 1;
+    }
+	
+    document.getElementById('results').value = 
+      document.getElementById('results').value + 
+      "You got " + count + " correct." + "\n";
+  }
+  </script>
+  </head>
+
+  <body bgcolor="#FFEBCD">
+    <h1>General Questions on HTML</h1>
+
+    <p>
+    <strong>Browsers remove extra spaces when displaying an HTML file.</strong><br />
+  <input type="radio" name="color" id="T" />true<br />
+  <input type="radio" name="color" id="F" />false<br />
+  
+  <p>
+    <strong> What is the correct HTML5 element for playing audio files?</strong><br />
+    <input type="checkbox" name="flavor" id="mp3" />mp3<br />
+    <input type="checkbox" name="flavor" id="audio"  />audio<br />
+    <input type="checkbox" name="flavor" id="sound"  />sound</p>
+    
+    
+    
+     <p>
+    <strong>Which attribute for script elements is no longer required in HTML5?</strong><br />
+    <input type="radio" name="color" id="type" />type<br />
+    <input type="radio" name="color" id="href" />href<br />
+    <input type="radio" name="color" id="src" />src<br />
+	<input type="radio" name="color" id="rel" />rel<br />
+	</p>
+	
+    
+    <p>
+    <strong>In HTML5, you can embed SVG elements directly into an HTML page.</strong><br />
+    <input type="radio" name="flavor" id="False" />False<br />
+    <input type="radio" name="flavor" id="True"  />True<br />
+    </p>
+    
+    
+    <p>
+    <input type="button" value="Show Results" onClick="Check();" />
+    </p>
+    
+    <p>
+    <strong>Results</strong><br />
+    <textarea id="results" value="" rows=4 cols=40 wrap="virtual">
+    </textarea>
+    </p>
+
+  </body>
+</html>

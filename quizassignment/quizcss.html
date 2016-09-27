@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Control Examples</title>
+
+  <script type="text/javascript">
+  function Check()
+  {
+  	var count;
+    count = 0;
+	
+    // clear results box
+    document.getElementById('results').value = "";
+	
+    // check if p is checked
+    if (document.getElementById('p').checked) {
+      count = count + 1;
+      document.getElementById('results').value = 
+        document.getElementById('results').value + 
+        "P is checked" + "\n";
+    }
+	
+    // check if Lists is selected
+    if (document.getElementById('properties').checked || document.getElementById('values').checked ) {
+		  count = count + 1;
+    }
+	
+    document.getElementById('results').value = 
+      document.getElementById('results').value + 
+      "You got " + count + " correct." + "\n";
+	  
+	  // check if Image is checked
+    if (document.getElementById('#main').checked) {
+      count = count + 1;
+      document.getElementById('results').value = 
+        document.getElementById('results').value + 
+        "#main is checked" + "\n";
+    }
+	  
+	   // check if Bold is selected
+    if (document.getElementById('/* */').checked || document.getElementById('//').checked ) {
+		  count = count + 1;
+    }
+	
+    document.getElementById('results').value = 
+      document.getElementById('results').value + 
+      "You got " + count + " correct." + "\n";
+  }
+  </script>
+  </head>
+
+  <body bgcolor="#FFFF99">
+    <h1>Quiz Questions on CSS</h1>
+
+    <p>
+    <strong>What does CSS stands for</strong><br />
+  <input type="radio" name="color" id="p" />
+  Computer Style Sheet<br />
+  <input type="radio" name="color" id=".p" />
+  Cascading Style Sheet
+  <br />
+   <input type="radio" name="color" id="p.." />
+  Colorfull Style Sheet <br />
+  <input type="radio" name="color" id="p..." />
+  Creative Style Sheet<br /> </p>
+    <strong>Where in an HTML document is the correct place to refer to an external style sheet?</strong><br />
+    <input type="checkbox" name="flavor" id="properties" />At the end of the document<br />
+    <input type="checkbox" name="flavor" id="selector"  /> In the <head> section<br />
+    <input type="checkbox" name="flavor" id="values"  /> In the <body> section</p>
+    
+    
+    
+     <p>
+    <strong>Which HTML attribute is used to define inline styles?</strong>
+<br />
+    <input type="radio" name="color" id="#main" />class<br />
+    <input type="radio" name="color" id=".main" />style<br />
+    <input type="radio" name="color" id=".main" />styles<br />
+	<input type="radio" name="color" id=".main" />font<br /></p>
+    
+    <p>
+    <strong>Which property is used to change the background color?</strong><br />
+    <input type="checkbox" name="flavor" id="/*" />background-color<br />
+    <input type="checkbox" name="flavor" id="// //"  />color<br />
+   
+    <input type="checkbox" name="flavor" id="*"  />bgcolor</p>
+    
+    
+    <p>
+    <input type="button" value="Show Results" onClick="Check();" />
+    </p>
+    
+    <p>
+    <strong>Results</strong><br />
+    <textarea id="results" value="" rows=4 cols=40 wrap="virtual">
+    </textarea>
+    </p>
+<a href="jsquiz.html">next &gt;&gt;</a>
+  </body>
+</html>

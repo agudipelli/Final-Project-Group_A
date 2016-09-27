@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Control Examples</title>
+
+  <script type="text/javascript">
+  function Check()
+  {
+  	var count;
+    count = 0;
+	
+    // clear results box
+    document.getElementById('results').value = "";
+	
+    // check if False is checked
+    if (document.getElementById('False').checked) {
+      count = count + 1;
+      document.getElementById('results').value = 
+        document.getElementById('results').value + 
+        "False is checked" + "\n";
+    }
+	
+    // check if Lists is selected
+    if (document.getElementById('Hypertext Markup Language').checked) {
+		  count = count + 1;
+		  document.getElementById('results').value = 
+        document.getElementById('results').value + 
+        "Hypertext Markup Language is checked" + "\n";
+    }
+	
+    document.getElementById('results').value = 
+      document.getElementById('results').value + 
+      "You got " + count + " correct." + "\n";
+	  
+	  // check if Image is checked
+    if (document.getElementById('img').checked) {
+      count = count + 1;
+      document.getElementById('results').value = 
+        document.getElementById('results').value + 
+        "img is checked" + "\n";
+    }
+	  
+	   // check if Bold is selected
+    if (document.getElementById('strong').checked || document.getElementById('b').checked ) {
+		  count = count + 1;
+    }
+	
+    document.getElementById('results').value = 
+      document.getElementById('results').value + 
+      "You got " + count + " correct." + "\n";
+  }
+  </script>
+  </head>
+
+  <body bgcolor="#CCFF99">
+    <h1>HTML Questions</h1>
+
+    <p>
+    <strong>Inline elements are normally displayed without starting a new line.</strong><br />
+    <input type="radio" name="color" id="False" />False<br />
+    <input type="radio" name="color" id="Strong" />True
+    </p>
+    
+    <p>
+    <strong>What does HTML stand for?</strong><br />
+    <input type="radio" name="flavor" id="Hypertext Markup Language" />Hypertext Markup Language<br />
+    <input type="radio" name="flavor" id="Hyperlinks and Text Markup Language"  />Hyperlinks and Text Markup Language<br />
+    <input type="radio" name="flavor" id="Home Tool Markup Language"  />Home Tool Markup Language</p>
+    
+    
+    
+     <p>
+    <strong>HTML comments start with <!-- and end with --></strong><br />
+    <input type="radio" name="color" id="Marquee" />True<br />
+    <input type="radio" name="color" id="Strong" />False
+    </p>
+    
+    <p>
+    <strong>Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?</strong><br />
+    <input type="radio" name="flavor" id="strong" />longdesc<br />
+    <input type="radio" name="flavor" id="dark"  />alt<br />
+    <input type="radio" name="flavor" id="b"  />title<br />
+    <input type="radio" name="flavor" id="emp"  />src</p>
+    
+    
+    <p>
+    <input type="button" value="Show Results" onClick="Check();" />
+    </p>
+    
+    <p>
+    <strong>Results</strong><br />
+    <textarea id="results" value="" rows=4 cols=40 wrap="virtual">
+    </textarea>
+    </p>
+    <a href="quizcss.html">next &gt;&gt;</a>
+  </body>
+</html>

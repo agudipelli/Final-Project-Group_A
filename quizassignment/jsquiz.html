@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Control Examples</title>
+
+  <script type="text/javascript">
+  function Check()
+  {
+  	var count;
+    count = 0;
+	
+    // clear results box
+    document.getElementById('results').value = "";
+	
+    // check if T is checked
+    if (document.getElementById('T').checked) {
+      count = count + 1;
+      document.getElementById('results').value = 
+        document.getElementById('results').value + 
+        "True is checked" + "\n";
+    }
+	else (return 0);
+    // check if Lists is selected
+    if (document.getElementById('c').checked) {
+		  count = count + 1;
+    }
+	
+    document.getElementById('results').value = 
+      document.getElementById('results').value + 
+      "You got " + count + " correct." + "\n";
+	  
+	  // check if it is checked
+    if (document.getElementById('sort').checked) {
+      count = count + 1;
+      document.getElementById('results').value = 
+        document.getElementById('results').value + 
+        "Sort is checked" + "\n";
+    }
+	  
+	   // check if Bold is selected
+    if (document.getElementById('if i').checked ) {
+		  count = count + 1;
+    }
+	
+    document.getElementById('results').value = 
+      document.getElementById('results').value + 
+      "You got " + count + " correct." + "\n";
+  }
+  </script>
+  </head>
+
+  <body bgcolor="#00FFFF">
+    <h1>JS Quiz Questions</h1>
+
+    <p>
+    <strong>The external JavaScript file must contain the script tag.</strong><br />
+  <input type="radio" name="color" id="T" />True<br />
+  <input type="radio" name="color" id="F" />False
+  <p>
+    <strong>How do you create a function in JavaScript?</strong><br />
+    <input type="radio" name="flavor" id="b" />function = myFunction()<br />
+    <input type="radio" name="flavor" id="c"  />function myFunction()<br />
+    <input type="radio" name="flavor" id="s"  />function:myFunction()</p>
+    
+    
+    
+     <p>
+    <strong>Which built-in method sorts the elements of an array?</strong><br />
+    <input type="radio" name="color" id="sort" />sort()<br />
+    <input type="radio" name="color" id="order" />order()</p>
+    
+    <p>
+    <strong>How to write an IF statement in JavaScript?</strong><br />
+    <input type="radio" name="flavor" id="i=5" />if i = 5 then<br />
+    <input type="radio" name="flavor" id="i==5"  />if i = 5 then<br />
+    <input type="radio" name="flavor" id="if"  /> if (i == 5)<br />
+    <input type="radio" name="flavor" id="if i"  />if i == 5 then</p>
+    
+    
+    <p>
+    <input type="button" value="Show Results" onClick="Check();" />
+    </p>
+    
+    <p>
+    <strong>Results</strong><br />
+    <textarea id="results" value="" rows=4 cols=40 wrap="virtual">
+    </textarea>
+    </p>
+<a href="genrealquiz.html">next &gt;&gt;</a>
+  </body>
+</html>

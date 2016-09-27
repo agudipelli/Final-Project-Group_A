@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<script type="text/javascript" src="Js/jquery-1.9.1.min.js"></script>
+ <script type="text/javascript" src="Js/jssor.core.js"></script>
+    <script type="text/javascript" src="Js/jssor.utils.js"></script>
+    <script type="text/javascript" src="Js/jssor.slider.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            var _CaptionTransitions = [];
+            //Left to Right
+            _CaptionTransitions["L"] = { $Duration: 800, $FlyDirection: 1 };
+            //Right to Left
+            _CaptionTransitions["R"] = { $Duration: 800, $FlyDirection: 2 };
+            //Top to Bottom
+            _CaptionTransitions["T"] = { $Duration: 800, $FlyDirection: 4 };
+            //Bottom to Top
+            _CaptionTransitions["B"] = { $Duration: 800, $FlyDirection: 8 };
+            //Reference http://www.jssor.com/developement/caption-transition-viewer.html
+
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, default value is 1
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+        });
+    </script>
+    
+	<div class="a">
+	<div class="b"><ul>
+    					<li><a href="index.html">Home</a></li>
+    					<li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="carrers.html">Carrers</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li></ul></div>
+	<img src="images/Jericon.png" width="65" height="68" /></div>
+<div class="qwerty">
+<div id="c">
+    <div id="slider1_container" style="position: relative; width: 875px; height: 350px;">
+    <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+      <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center; top: 24px; left: 189px; width: 100%; height:100%;">            </div>
+      </div>
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 1px; top: 29px; width:875px; height:350px; overflow: hidden;">
+          <div><img u="image" src="images/01.jpg" /></div>
+          <div><img u="image" src="images/02.jpg"/></div>
+          <div><img u="image" src="images/04.png"/></div>
+          <div><img u="image" src="images/03.jpg"/></div>
+          <div><img u="image" src="images/05.png" /></div>
+    </div><div></div></div><br /><br /><br />
+      <img src="images/515f37aa36f46.image.jpg" width="250" height="190"/><img src="images/2000px-Dell_Logo.svg.png"  width="250" height="190"/><img src="images/att_rp_vt_r_4cp_grd_wht.jpg"  width="250" height="190"/>
+      <img src="images/innovativeserves copy.PNG"  width="250" height="250"/><img src="images/KN-NzuRl.png"  width="250" height="250"/><img src="images/Utube.png"  width="250" height="250"/><img src="images/verizon-1.gif"  width="250" height="190"/>
+      <img src="images/wellsfargo.png"  width="250" height="190"/><img src="images/fb.png" width="250" height="190" /><img src="images/twit.jpg" width="250" height="190" />
+      <div class="h">Copyrights &copy; NASS Consultancy.</div> 
+</body>
+</html>

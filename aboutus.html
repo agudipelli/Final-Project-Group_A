@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<script type="text/javascript" src="Js/jquery-1.9.1.min.js"></script>
+ <script type="text/javascript" src="Js/jssor.core.js"></script>
+    <script type="text/javascript" src="Js/jssor.utils.js"></script>
+    <script type="text/javascript" src="Js/jssor.slider.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            var _CaptionTransitions = [];
+            //Left to Right
+            _CaptionTransitions["L"] = { $Duration: 800, $FlyDirection: 1 };
+            //Right to Left
+            _CaptionTransitions["R"] = { $Duration: 800, $FlyDirection: 2 };
+            //Top to Bottom
+            _CaptionTransitions["T"] = { $Duration: 800, $FlyDirection: 4 };
+            //Bottom to Top
+            _CaptionTransitions["B"] = { $Duration: 800, $FlyDirection: 8 };
+            //Reference http://www.jssor.com/developement/caption-transition-viewer.html
+
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, default value is 1
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+        });
+    </script>
+    
+	<div class="a">
+	<div class="b"><ul>
+    					<li><a href="index.html">Home</a></li>
+    					<li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="carrers.html">Carrers</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li></ul></div>
+	<img src="images/Jericon.png" width="65" height="68" /></div>
+<div class="qwerty">
+<div id="c">
+	<p></p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p><span class="style3">About Us</span></p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p><span class="style2">Vision</span></p>
+  <p>To be recognized and respected as a leading strategic IT/ITES/KPO/BFSI/FMCG partner by the clients in providing complete IT/Non IT/Banking/Retail consulting services and HR solutions.</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p><span class="style2">Mission</span></p>
+  <p>&nbsp;</p>
+  <p><b>Career Making</b> – NASS Consultancy aims to bridge the gap between College and the Corporate. Over the years we have seen that companies hire only the cream of the college pass-outs, NASS Consultancy aims at employment not just for top of the class but for students with all grades and from all academic streams, by MMM ( Mentoring – Measuring – Monitoring).</p>
+  <p>&nbsp;</p>
+  <p><b>Career Building</b> - NASS Consultancy aspires to build highly skilled man power by imparting the latest technologies for fresher and career enhancement programs for experienced in pragmatic approach as per the corporate needs and be their career guide for their life time.</p>
+  <p>&nbsp;</p>
+  <p><b>Consulting Services</b> - NASS Consultancy is committed to drive in the direction of its Vision; it takes pride to announce that it backed by a high caliber IT experts, PMP Certified Management professionals who are well versed in understanding client business and their project requirements and come up with innovative, customized and cost effective software and HR solutions.</p>
+  <p>&nbsp;</p>
+  <p><b>Quality</b> -NASS Consultancy constantly strives for excellence. With its expertise in IT/ITES/KPO/BFSI/FMCG and Business Management we are committed for Precision and Quality in everything that we deliver.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+</div>
+</div>
+      <div class="h">Copyrights &copy;NASS Consultancy.</div> 
+</body>
+</html>

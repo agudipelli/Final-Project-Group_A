@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<script type="text/javascript" src="Js/jquery-1.9.1.min.js"></script>
+ <script type="text/javascript" src="Js/jssor.core.js"></script>
+    <script type="text/javascript" src="Js/jssor.utils.js"></script>
+    <script type="text/javascript" src="Js/jssor.slider.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            var _CaptionTransitions = [];
+            //Left to Right
+            _CaptionTransitions["L"] = { $Duration: 800, $FlyDirection: 1 };
+            //Right to Left
+            _CaptionTransitions["R"] = { $Duration: 800, $FlyDirection: 2 };
+            //Top to Bottom
+            _CaptionTransitions["T"] = { $Duration: 800, $FlyDirection: 4 };
+            //Bottom to Top
+            _CaptionTransitions["B"] = { $Duration: 800, $FlyDirection: 8 };
+            //Reference http://www.jssor.com/developement/caption-transition-viewer.html
+
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, default value is 1
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+        });
+    </script>
+    
+	<div class="a">
+	<div class="b"><ul>
+    					<li><a href="index.html">Home</a></li>
+    					<li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="carrers.html">Carrers</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li></ul></div>
+	<img src="images/Jericon.png" width="65" height="68" /></div>
+<div class="qwerty">
+  <h1>careers</h1>
+  <p> </p>
+  <p>If you are an experienced professional with strong skill base, check out the current openings at Aguna Soft Technologies for a suitable position.</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <h3>Current Openings</h3>
+  <p>&nbsp;</p>
+<p><strong>Internship: Content Writer/ Web Developer/ Graphics Designer/ SEO &amp; SOcial Media:  4 vacancies </strong><br />
+      <strong>Qualifications:</strong> UG &amp; Freshers (BCA, BE/B.Tech/, MCA, BBA, MBA, Diploma etc.)<br />
+    <strong>Desired Skills:</strong><br />
+    <strong>*</strong> <strong>Content Writer:</strong> Content Writing, Good Communication Skills, Written Communication Skills, Creative Thinking &amp; Writing, Blogging.<br />
+    <strong>* Graphics Designer:</strong> Adobe Photoshop, Adobe Illustrator, Corel Draw, Creative Thinking.<br />
+    <strong>* Web Developer:</strong> Adobe Photoshop, Adobe Illustrator, Corel Draw, Creative Thinking.<br />
+    <strong>* SEO &amp; Social Media: </strong>Basic Knowledge about SEO, SMO, Article Publishing, Website Promotion, Social Media Activity.<br />
+    <strong>Duration:</strong> 1 Month/ 3 Month/ 6 Month<br />
+    <strong>Location:</strong> Noida</p>
+  <p> </p>
+  <p><strong>Business Development Manager: 2 Vacancy </strong><br />
+      <strong>Qualifications:</strong> BBA, MBA, BE/B.Tech <strong><br />
+        Desired Skills:</strong></p>
+  <ul>
+    <li>Prior Experience in Tele Sales/ Direct Sales preferred.</li>
+    <li>Experience to sale through Educational Institutes will give additional strength.</li>
+    <li>Undergraduate can also apply</li>
+    <li>High energy individuals with goal orientation.</li>
+    <li>Responsible to generate quality leads through website, email, phone and converting them into sales to achieve targets.</li>
+    <li>Must have knowledge of sales.</li>
+    <li>Must have excellent communication and presentation skills.</li>
+    <li>Must have strong marketing and interpersonal skills.</li>
+    <li>Should be able to work independently.</li>
+    <li>Managing all branding related activities.</li>
+  </ul>
+  <p><strong>Experience:</strong> 0-2yrs</p>
+  <p><strong>Android Developer: 2 Vacancies </strong><strong>(Completed)</strong><br />
+      <strong>Qualifications:</strong> UG – B.Tech/B.E. (CS/IT/EC)<br />
+    <strong>Desired Skills:</strong> Depth knowledge of Android &amp; it’s Application Development, Good Communication Skills.<br />
+    <strong>Position:</strong> Trainer/faculty<br />
+    <strong>Experience:</strong> 0-2yrs</p>
+  <p>&nbsp;</p>
+  <p><strong>Automotive Engine Design: 2 Vacancies </strong><strong>(Completed)</strong><br />
+      <strong>Qualifications:</strong> UG – B.Tech/B.E. (Mechanical Branch)<br />
+    <strong>Desired Skills:</strong> Depth knowledge of IC Engine Design and its applications also software’s like 3D CAD/CATIA.<br />
+    <strong>Position:</strong> Trainer/faculty<br />
+    <strong>Experience:</strong> 0-2yrs</p>
+  <p>&nbsp;</p>
+  <p><strong>Robotics &amp; Embedded systems: 4 Vacancies</strong><br />
+      <strong>Qualifications:</strong> B.Tech/Bsc/ Diploma in Electronics<br />
+    <strong>Desired Skills:</strong> Good Knowledge of Microprocessors, Microcontrollers, AVR, ARM, Embedded Systems, Digital Electronics, Good knowledge of ‘C’.<br />
+    <strong>Position:</strong> Trainer/faculty<br />
+    <strong>Experience:</strong> 0-2yrs</p>
+  <p>&nbsp;</p>
+  <p><strong>Ethical Hackers : 2 Vacancies</strong><br />
+      <strong>Qualifications:</strong> UG – B.Tech/B.E. – Any Specialization, BCA – Computers, Diploma in Ethical hacking and Information Security, Certification in Cyber security.<br />
+    <strong>Position:</strong> Trainer/faculty<br />
+    <strong>Experience:</strong> 0-2yrs</p>
+  <p>&nbsp;</p>
+  <p><strong>Web Developer : 2 Vacancies</strong>(completed)<br />
+      <strong>Qualifications:</strong> UG – B.Tech/B.E. – Any Specialization, BCA – Computers, BSc, Diploma<br />
+    Desired Skills: Good skills in Web Designing,PHP, MySQL, JOOMLA, WAMP Technologies, Good Communications skils, teaching skills, Fluent in English<br />
+    <strong>Position:</strong> Trainer/faculty<br />
+    <strong>Experience:</strong> 0-2yrs</p>
+  <p>&nbsp;</p>
+  <p><strong>3D Animation &amp; Special effects:  2 Vacancies </strong>(Completed)<br />
+      <strong>Qualifications:</strong> Certification from any animation institute.<br />
+    <strong>Desired Skills:</strong> Designing software (3D) – 3D-Maya, Designing software (3D) – 3D-Max, Designing software (2D) – Adobe Photoshop, Flash, Corel DRAW, Illustrator, Dream weaver, Captivate, Video Editing and Effects Software – Sound Forge, Adobe Premiere, knowledge of 3ds Modeling.<br />
+    <strong>Position:</strong> Trainer/faculty<br />
+    <strong>Experience:</strong> 0-2yrs</p>
+  <p>&nbsp;</p>
+  <p><strong>Campus Ambassador</strong><br />
+      <strong>Qualifications:</strong> UG – B.Tech/B.E. (Any Specialization), BCA. PG- M.Tech/MS, MCA. (Only 2nd to Final Year Students can Apply)<br />
+    <strong>Desired Skills:</strong> Strong Interpersonal Skills, Involvement in campus life (extracurricular activities, student organizations, Tech Fest), Passion for learning, creativity, innovation and information-sharing.<br />
+  <strong>Profile:</strong> Intern</p>
+  <p><br />
+  </p>
+  <h3>How to Apply</h3>
+  <p>Send us your CV along with your passport size Photograph to <strong><a href="mailto:career@innovianstechnologies.com">career@Group_A.com</a></strong><br />
+      <strong>Note: Please specify the Post Name in Subject Line of Email</strong></p>
+</div>
+      <div class="h">Copyrights &copy; NASS Consultancy.</div> 
+</body>
+</html>
